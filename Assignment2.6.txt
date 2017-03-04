@@ -1,5 +1,6 @@
 1.Write a program to accepts two numbers from stdin and find all the odd as well as even
-numbers present in between them.
+numbers present in between them.
+
 
 
 package gild;
@@ -9,16 +10,16 @@ import java.util.Scanner;
 public class acad {
 
 	public static void main(String[] args) {
-		int a,b;
+		int i,j;
 		Scanner in=new Scanner(System.in);
-		a=in.nextInt();
-		b=in.nextInt();
-		for(int i=a+1;i<b;i++)
+		i=in.nextInt();
+		j=in.nextInt();
+		for(int k=i+1;k<j;k++)
 		{
 			if(i%2==0)
-				System.out.println("Even "+i);
+				System.out.println("Even no"+i);
 			else
-				System.out.println("Odd "+i);
+				System.out.println("Odd no"+i);
 		}
 		
 
@@ -29,7 +30,7 @@ public class acad {
 
 
 2.Joe is scared to go to school. When her dad asked the reason, Joe said she is unable to complete
-the task given by her teacher. The task was to find the “first 10 multiples” of the number entered
+the task given by her teacher. The task was to find the â€œfirst 10 multiplesâ€ of the number entered
 from stdin. 
 
 package gild;
@@ -53,7 +54,8 @@ public class acad {
 
 
 3.Write a program consisting method sum() and demonstrate the concept of method
-overloading using this method.
+overloading using this method.
+
 
 
 acad.java
