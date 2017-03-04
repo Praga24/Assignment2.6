@@ -1,0 +1,92 @@
+1.Write a program to accepts two numbers from stdin and find all the odd as well as even
+numbers present in between them.
+
+
+package gild;
+
+import java.util.Scanner;
+
+public class acad {
+
+	public static void main(String[] args) {
+		int a,b;
+		Scanner in=new Scanner(System.in);
+		a=in.nextInt();
+		b=in.nextInt();
+		for(int i=a+1;i<b;i++)
+		{
+			if(i%2==0)
+				System.out.println("Even "+i);
+			else
+				System.out.println("Odd "+i);
+		}
+		
+
+	}
+}
+
+
+
+
+2.Joe is scared to go to school. When her dad asked the reason, Joe said she is unable to complete
+the task given by her teacher. The task was to find the “first 10 multiples” of the number entered
+from stdin. 
+
+package gild;
+
+import java.util.Scanner;
+
+public class acad {
+
+	public static void main(String[] args) {
+		int a;
+		Scanner in=new Scanner(System.in);
+		a=in.nextInt();
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(a+"x"+i+"="+(a*i));
+		}
+
+	}
+}
+
+
+
+3.Write a program consisting method sum() and demonstrate the concept of method
+overloading using this method.
+
+
+acad.java
+
+package gild;
+
+import java.util.Scanner;
+
+public class acad {
+
+	public static void main(String[] args) {
+		int a;
+		ss s=new ss();
+		s.sum(55,44);
+		s.sum(88.2,8.22);  
+	}
+}
+
+
+
+ss.java
+
+package gild;
+
+public class ss
+{
+public void sum(int a,int b)
+{
+	System.out.println("Int Sum is:"+(a+b));
+}
+
+public void sum(double a,double b)
+{
+	System.out.println("Double Sum is:"+(a+b));
+}
+}
